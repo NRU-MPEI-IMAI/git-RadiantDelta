@@ -1,0 +1,51 @@
+// The Round Table
+digraph "1-2" {
+	rankdir="LR";
+	 S [label= "", shape=none,height=.0,width=.0]
+	n1 [label=q1]
+	n2 [label=q2]
+	n3 [label=q3]
+	n4 [label=q4]
+	n5 [label=q5 , shape=doublecircle]
+	n6 [label=q6]
+	n7 [label=q7 , shape=doublecircle]
+	n8 [label=q8]
+	n9 [label=q9]
+	n10 [label=q10 , shape=doublecircle]
+	n11 [label=q11]
+	n12 [label=q12 , shape=doublecircle]
+	n13 [label=q13 , shape=doublecircle]
+	n14 [label=q14 , shape=doublecircle]
+	n15 [label=q15]
+	n16 [label=q16 , shape=doublecircle]
+	n17 [label=q17 , shape=doublecircle]
+	n18 [label=q18 , shape=doublecircle]
+	S -> n1
+	n1 -> n2 [ label="a" ];
+	n1 -> n11 [ label="b" ];
+	n2 -> n3 [ label="b" ];
+	n2 -> n8 [ label="a" ];
+	n3 -> n4 [ label="a" ];
+	n3 -> n6 [ label="b" ];
+	n4 -> n5 [ label="b" ];
+	n5 -> n5 [ label="b" ];
+	n6 -> n6 [ label="b" ];
+	n6 -> n7 [ label="a" ];
+	n7 -> n7 [ label="b" ];
+	n8 -> n9 [ label="b" ];
+	n9 -> n10 [ label="b" ];
+	n10 -> n10 [ label="b" ];
+	n11 -> n12 [ label="b" ];
+	n11 -> n15 [ label="a" ];
+	n12 -> n12 [ label="b" ];
+	n12 -> n13 [ label="a" ];
+	n13 -> n13 [ label="b" ];
+	n13 -> n14 [ label="a" ];
+	n14 -> n14 [ label="b" ];
+	n15 -> n16 [ label="b" ];
+	n15 -> n18 [ label="a" ];
+	n16 -> n16 [ label="b" ];
+	n16 -> n17 [ label="a" ];
+	n17 -> n17 [ label="b" ];
+	n18 -> n18 [ label="b" ];
+}
