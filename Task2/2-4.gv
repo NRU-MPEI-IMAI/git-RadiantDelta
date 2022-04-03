@@ -1,0 +1,25 @@
+// The Round Table
+digraph "2-4" {
+	rankdir="LR";
+	 S [label= "", shape=none,height=.0,width=.0]
+	n1 [label=p1q1]
+	n2 [label=p2q1 , shape=doublecircle]
+	n3 [label=p2q2 , shape=doublecircle]
+	n4 [label=p2q3 , shape=doublecircle]
+	n5 [label=p1q2 , shape=doublecircle]
+	n6 [label=p1q3 , shape=doublecircle]
+	
+	S -> n1
+	n1 -> n2 [ label="a" ];
+	n1 -> n5 [ label="b" ];
+	n2 -> n1 [ label="a" ];
+	n2 -> n3 [ label="b" ];
+	n3 -> n4 [ label="b" ];
+	n3 -> n5 [ label="a" ];
+	n4 -> n2 [ label="b" ];
+	n4 -> n6 [ label="a" ];
+	n5 -> n3 [ label="a" ];
+	n5 -> n6 [ label="b" ];
+	n6 -> n4 [ label="a" ];
+	n6 -> n1 [ label="b" ];
+}

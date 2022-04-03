@@ -1,0 +1,14 @@
+// The Round Table
+digraph "2-3-1" {
+	rankdir="LR";
+	 S [label= "", shape=none,height=.0,width=.0]
+	n1 [label=p1 , shape=doublecircle]
+	n2 [label=p2]
+
+	S -> n1
+	n1 -> n1 [ label="b" ];
+	n1 -> n2 [ label="a" ];
+	n2 -> n2 [ label="b" ];
+	n2 -> n1 [ label="a" ];
+
+}
